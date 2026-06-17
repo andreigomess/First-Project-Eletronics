@@ -6,5 +6,10 @@ A principal ideia é utilizar o arduino uno para programar 3 leds ao mesmo tempo
 Os leds funcionarão como um semáforo. O primeiro a ligar é o vermelho, depois de um tempo o amarelo e então o verde.
 Abaixo, estará listado os passos de como replicar este projeto para testes.
 
+## Ferramentas necessárias:
+1. Um microcontrolador - Nesse caso, será usado o Arduino Uno.
+2. 3 LEDs (1 vermelho, 1 amarelo, 1 verde)
+3. 3 Resistores.
+4. 1 Protoboard.
+
 # HARDWARE: A alimentação e ligação do arduino com os leds.
-Primeiramente, é importante salientar de que é preciso uma protoboard para conseguir interligar todos os leds no mesmo microcontrolador.
