@@ -146,7 +146,7 @@ void loop() {
 }
 ```
 
-### Vídeos (Gifs) do circuito funcinando (Simulador e Físico):
+### Vídeos (Gifs) do circuito funcionando (Simulador e Físico):
 
 #### Simulador:
 
