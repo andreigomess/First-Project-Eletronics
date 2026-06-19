@@ -3,10 +3,10 @@ Projeto básico de eletrônica para iniciar os estudos usando Arduino Uno.
 Será demonstrado como construir um semáforo de trânsito utilizando um microcontrolador (Nesse caso, Arduino Uno).
 
 # Ideia central
-A principal ideia é utilizar o Arduino Uno para programar 3 leds ao mesmo tempo. 
-Os leds funcionarão como um semáforo. O primeiro a ligar é o vermelho, depois de um tempo o amarelo e então o verde. Abaixo, estará listado os passos de como replicar este projeto para testes.
+A principal ideia é utilizar o Arduino Uno para programar 3 LEDs ao mesmo tempo. 
+Os LEDs funcionarão como um semáforo. O primeiro a ligar é o vermelho, depois de um tempo o verde e então o amarelo. Depois, o sistema reinicia voltando ao vermelho. Abaixo, estará listado os passos de como replicar este projeto para testes.
 As imagens abaixo serão do [Thinkerpad](https://www.tinkercad.com/dashboard), um simulador usado para replicar projetos com componentes eletrônicos. Foi utilizado aqui principalmente para evitar queimar algum LED durante a construção dele.
-Você também pode acessá-lo para testar este projeto, ou usá-lo para construir o seu próprio físico, basta clicar em cima. Ao final, deixo um vídeo do circuito funcionando fisicamente.
+Você também pode acessá-lo para testar este projeto, ou usá-lo para construir o seu próprio projeto físico, basta clicar em cima. Ao final, deixo um vídeo do circuito funcionando fisicamente.
 
 ### Componentes de Software necessários:
 - [IDE Arduino](https://www.arduino.cc/en/software/).
@@ -19,8 +19,10 @@ Você também pode acessá-lo para testar este projeto, ou usá-lo para construi
 - Jumpers Macho-Macho (Fios).
 
 ## HARDWARE: A alimentação do Arduino e ligação com os LEDs.
-- Primeiramente, a alimentação do Arduino é por meio da sua entrada USB tipo B que é conectada ao computador ou utilizando uma fonte de alimentação. A tensão máxima do Arduino é 5V, portanto cuidado ao conectar qualquer fonte para alimentá-lo.
-- Para começar o projeto, conecte seu Arduino no computador, para alimentá-lo e ser possível programá-lo.
+- Primeiramente, a alimentação do Arduino acontece de duas formas:
+1. Por meio da sua entrada USB tipo B. O cabo é USB-B e USB-A, que é conectada ao Arduino e ao computador. 
+2. Utilizando uma fonte de alimentação. A tensão máxima do Arduino é 5V, portanto cuidado ao conectar qualquer fonte para alimentá-lo.
+- Para começar o projeto, conecte seu Arduino no computador usando o cabo USB, para alimentá-lo e ser possível programá-lo.
 
 Antes de começar, é importante mostrar como é a distribuição de energia na Protoboard:
 - As trilhas laterais (as com símbolo de positivo + e negativo -) possuem transferência de energia na horizontal.
@@ -29,6 +31,7 @@ Antes de começar, é importante mostrar como é a distribuição de energia na 
 
 ![Proboard](Imagens/Protoboard.png)
 
+OBS.: As trilhas verticais vão de *a* até *e* e depois de *f* até *j* separadamente, portanto, se conectarmos um fio de energia na trilha *2c* por exemplo, apenas a trilha 2 de *a* até *e* estará energizada. 
 Agora, vamos aos passos para montar o circuito.
 
 ### 1. Conectar o GND a Protoboard:
